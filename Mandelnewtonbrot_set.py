@@ -35,7 +35,7 @@ def generate_mandel_set(x_min, x_max, y_min, y_max, higth, width, tol = 5^-5, it
 
     return closest_roots_index
 
-closest_roots_index = generate_mandel_set(1, 30, 1, 30, 3000, 3000)
+closest_roots_index = generate_mandel_set(1, 10, 1, 10, 1000, 1000)
 
 plt.figure(figsize=(10, 10))
 plt.imshow(closest_roots_index, extent=[-2, 2, -2, 2], cmap="hsv", origin="lower")
